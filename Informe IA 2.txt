@@ -1,0 +1,36 @@
+Petare, 11 de junio de 2026.
+Curso de Programación Básica EDUCA.
+Alumna: Maira Galindo.
+
+----------Informe IA (Parte 2)----------
+1)¿Cuáles fueron los prompts que utilizaste?
+
+1. Prompt para el Diseño Visual y la Navbar
+El primer mensaje se enfoca puramente en mejorar la estructura HTML y el CSS.
+
+"Tengo un código base de un reproductor de música. Quiero que modifiques el CSS para cambiar el fondo de la página a un linear-gradient moderno.
+ Además, agrega en el HTML una barra de navegación (top-navbar) fija en la parte superior. Esta barra debe tener un logo a la izquierda, una frase 
+corta al centro y un botón con el texto 'Playlist' a la derecha."
+
+2. Prompt para el Menú Lateral y la Interactividad
+Una vez que la estructura visual está lista, este segundo mensaje le pide a la IA que cree el panel de canciones y conecte todo usando JavaScript.
+
+"Ahora, agrega un contenedor para la lista de reproducción (playlist-container) que funcione como un menú lateral que por defecto esté oculto fuera de la pantalla. 
+Crea la lógica en JavaScript para que:
+
+Al hacer clic en el botón 'Playlist' de la navbar, el menú se deslice hacia adentro.
+
+El código lea mi array de canciones y genere dinámicamente los elementos de la lista (<li>) dentro de ese panel, mostrando la miniatura, el título y el artista.
+
+Cuando el usuario haga clic en una canción de esa lista, el reproductor debe cargarla, reproducirla automáticamente, resaltar la canción activa con un color
+distinto en el menú y ocultar el panel lateral nuevamente." 
+
+2)Explicar donde no estuviste de acuerdo con la respueta de la IA.
+
+*Modifiqué el diseño de los colores del 'Playlist' de la página, ya que el resultado que me dió la IA era distinto, así que cambié los colores en los siguientes 
+códigos:
+-.nav-menu-btn
+-.nav-menu-btn:hover
+-.playlist-container
+-.playlist-item.active 
+
