@@ -1,0 +1,117 @@
+Petare, 6 de junio de 2026.
+Curso de Programación Básica de EDUCA.
+Alumna: Maira Galindo.
+
+-----------Informe IA 3 (Final)-----------
+
+1) ¿Cuáles fueron los Prompts qué utilizaste? 
+Para lograr que una Inteligencia Artificial te entregue un proyecto de programación estructurado, funcional y fácil de
+entender, la clave está en la especificidad y de ir paso a paso.
+
+1. El prompt inicial:
+
+"Actúa como un desarrollador web experto y profesor. Necesito los códigos para crear un reproductor de música interactivo utilizando HTML,
+ CSS y JavaScript en archivos separados." 
+
+El diseño debe ser moderno, limpio y centrado en la pantalla. Debe incluir:
+
+*Controles de reproducción: Play, Pause, Siguiente y Anterior.
+*Barra de progreso funcional (que avance con la canción y permita hacer clic para adelantar).
+*Información de la canción: Portada, título y artista.
+*Un botón de Playlist con la lista de las canciones.
+*Por favor, utiliza enlaces públicos de música e imágenes de prueba de internet para que funcione al abrir el archivo. 
+Agrega comentarios en el código JavaScript explicando qué hace cada sección de forma entendible."
+
+2. El Prompt de Diseño: Para mejorar la estética
+Una vez que la base funciona, es mejor pedir los cambios estéticos por separado para no saturar al modelo con demasiadas instrucciones a la vez.
+"Ahora quiero mejorar el diseño visual. Modifica el código CSS para que:
+
+*El fondo de la página (body) use un linear-gradient moderno y dinámico en tonos oscuros o vibrantes.
+*Añada una barra de navegación superior (top-navbar) fija en la parte de arriba de la página. Debe tener un logo/nombre de la app a la izquierda y una frase."
+
+"Tengo un código base de un reproductor de música. Quiero que modifiques el CSS para cambiar el fondo de la página a un linear-gradient moderno.
+ Además, agrega en el HTML una barra de navegación (top-navbar) fija en la parte superior. Esta barra debe tener un logo a la izquierda, una frase 
+corta al centro y un botón con el texto 'Playlist' a la derecha."
+
+3. El Prompt Educativo: Para aprender a personalizarlo
+Cuando el código es complejo, puedes pedir una guía paso a paso enfocada en la personalización.
+
+"El código funciona excelente. Ahora, explícame detalladamente cómo puedo reemplazar esas canciones de internet por mis propios archivos .mp3 y fotos que tengo 
+guardados en mi computadora. ¿Cómo debería organizar las carpetas de mi proyecto para que el código JavaScript encuentre los archivos correctamente?"
+
+"Ahora, agrega un contenedor para la lista de reproducción (playlist-container) que funcione como un menú lateral que por defecto esté oculto fuera de la pantalla. 
+Crea la lógica en JavaScript para que:
+
+*Al hacer clic en el botón 'Playlist' de la navbar, el menú se deslice hacia adentro.
+
+*El código lea mi array de canciones y genere dinámicamente los elementos de la lista (<li>) dentro de ese panel, mostrando la miniatura, el título y el artista.
+
+Cuando haga clic en una canción de esa lista, el reproductor debe cargarla, reproducirla automáticamente, resaltar la canción activa con un color distinto 
+en el menú y ocultar el panel lateral nuevamente."
+
+2) Explicar donde no estuviste de acuerdo con la respuesta de la IA
+
+1° El resultado de la IA fue distinto al que yo quería, así que modifiqué los estilos del <body>,<nav> (top-navbar) y la Playlist agregando una paleta de colores morados.
+
+2° Eliminé los siguientes códigos:
+
+*<i class="fas fa-music"></i> <span>SonicWave</span>(HTML)
+*.nav-logo i { color: #00d2ff; margin-right: 10px; }(CSS)
+
+El porque de esto es ya había creado un logo, a lo cual agregué lo siguente:
+
+*<img  class="logo" src="img/Just relax.com.png" alt="Logo">(HTML)
+*.logo{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}(CSS)
+
+3° Modifiqué el contenido del código const songs =[](title, artist, cover y src), ya que el resultado de la IA era distinto, así qué he agregado nombre de la música y 
+del artista, imagene y canciones (ya descargadas).
+
+Ejemplo:
+  
+{
+        title: 'Sonic Wave 1',
+        artist: 'Creative Minds',
+        cover: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500',
+        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
+    } ---> Código original (de la IA).
+---------------------------------------------------------------------------------------
+
+ {
+        title: 'Recuerdos susurrantes',
+        artist: 'ElevenLabs',
+        cover: 'https://i.pinimg.com/236x/43/f2/5b/43f25bd90df87174763733f44b0bad9e.jpg',
+        src: 'music/recuerdos-susurrantes.mp3'
+    } ---> Código modificado por mí.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
